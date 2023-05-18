@@ -22,3 +22,9 @@ services:
     repo: https://github.com/jeremy-render/hello-monorepo.git
     rootDir: frontend
     staticPublishPath: .
+    envVars:
+      - key: BACKEND_HOST
+        fromService:
+          name: hello-monorepo-backend
+          type: web
+          property: host
