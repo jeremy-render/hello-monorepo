@@ -26,6 +26,7 @@ services:
     envVars:
       - fromGroup: hello-monorepo-envgroup
       - key: BACKEND_HOST
-        fromService: hello-monorepo-backend
-        type: web
-        property: host
+        fromService: 
+          name: hello-monorepo-backend
+          type: web
+          property: host
