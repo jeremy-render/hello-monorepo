@@ -12,9 +12,9 @@ services:
       - fromGroup: hello-monorepo-envgroup
       - key: PYTHON_VERSION
         value: 3.10.8
-    # buildFilter:
-    #   paths:
-    #     - frontend/*
+    buildFilter:
+      paths:
+        - backend/*
 
   - type: web
     name: hello-monorepo-frontend
