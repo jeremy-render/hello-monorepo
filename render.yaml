@@ -1,8 +1,10 @@
 services:
   - type: web
     name: hello-monorepo-backend
+    plan: starter
     branch: main
     env: python
+    repo: https://github.com/jeremy-render/hello-monorepo.git
     rootDir: backend
     buildCommand: pip install -r requirements.txt
     envVars:
@@ -11,7 +13,9 @@ services:
 
   - type: web
     name: hello-monorepo-frontend
+    plan: starter
     branch: main
     env: static
+    repo: https://github.com/jeremy-render/hello-monorepo.git
     rootDir: frontend
     staticPublishPath: .
