@@ -9,6 +9,7 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
     envVars:
+      - fromGroup: hello-monorepo-envgroup
       - key: PYTHON_VERSION
         value: 3.10.8
 
@@ -19,3 +20,5 @@ services:
     repo: https://github.com/jeremy-render/hello-monorepo.git
     rootDir: frontend
     staticPublishPath: .
+    envVars:
+      - fromGroup: hello-monorepo-envgroup
