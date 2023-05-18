@@ -9,6 +9,7 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
     envVars:
+      - fromGroup: hello-monorepo-envgroup
       - key: PYTHON_VERSION
         value: 3.10.8
     buildFilter:
@@ -23,8 +24,4 @@ services:
     rootDir: frontend
     staticPublishPath: .
     envVars:
-      - key: BACKEND_HOST
-        fromService:
-          name: hello-monorepo-backend
-          type: web
-          property: host
+      - fromGroup: hello-monorepo-envgroup
