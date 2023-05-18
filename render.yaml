@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: hello-monorepo-backend
+    branch: main
+    env: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.8
+
+  - type: web
+    name: hello-monorepo-frontend
+    branch: main
+    env: static
+    rootDir: frontend
+    staticPublishPath: .
