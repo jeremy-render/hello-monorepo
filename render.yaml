@@ -11,6 +11,9 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.10.8
+    buildFilters:
+      - paths:
+        - frontend/**
 
   - type: web
     name: hello-monorepo-frontend
