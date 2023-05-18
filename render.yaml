@@ -25,3 +25,7 @@ services:
     staticPublishPath: .
     envVars:
       - fromGroup: hello-monorepo-envgroup
+      - key: BACKEND_HOST
+        fromService: hello-monorepo-backend
+        type: web
+        property: host
