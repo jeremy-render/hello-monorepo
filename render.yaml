@@ -11,6 +11,7 @@ services:
     startCommand: python app.py
     envVars:
       - fromGroup: hello-monorepo-envgroup-team
+        sync: false
       - key: PYTHON_VERSION
         value: 3.10.8
 
