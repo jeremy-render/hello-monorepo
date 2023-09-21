@@ -8,4 +8,5 @@ def hello_world():
     return 'Hello, World!'
 
 if __name__ == '__main__':
+    print('Hello main!', flush=True)
     app.run(host='0.0.0.0', port=10000, debug=True)
