@@ -1,10 +1,11 @@
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    print('printed hello word', flush=True)
+    print('headers', dict(request.headers))
+
     return 'Hello, World!'
 
 if __name__ == '__main__':
