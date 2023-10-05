@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    print('headers', dict(request.headers))
+    print('headers', dict(request.headers), flush=True)
 
     return 'Hello, World!'
 
