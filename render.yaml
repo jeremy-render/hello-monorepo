@@ -13,6 +13,8 @@ services:
       - fromGroup: hello-monorepo-envgroup-team
       - key: PYTHON_VERSION
         value: 3.10.8
+      - key: FOO
+        value: BAR
 
   - type: web
     name: hello-monorepo-frontend
