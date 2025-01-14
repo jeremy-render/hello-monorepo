@@ -15,8 +15,8 @@ services:
       - key: PYTHON_VERSION
         value: 3.10.8
       - key: FOO
-        value: BARR
-        previewValue: BARRR
+        sync: false
+
 
   - type: web
     name: hello-monorepo-frontend
