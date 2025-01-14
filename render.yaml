@@ -15,7 +15,7 @@ services:
         value: 3.10.8
       - key: FOO
         value: BAR
-        previewValue: BARR
+        previewValue: BARRR
 
   - type: web
     name: hello-monorepo-frontend
