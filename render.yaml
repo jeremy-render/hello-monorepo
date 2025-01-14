@@ -16,7 +16,7 @@ services:
       - key: PYTHON_VERSION
         value: 3.10.8
       - key: FOO
-        sync: false
+        value: BAR
 
 
   - type: web
