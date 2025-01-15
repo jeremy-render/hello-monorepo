@@ -9,7 +9,7 @@ services:
     env: python
     repo: https://github.com/jeremy-render/hello-monorepo.git
     rootDir: backend
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install -r requirements.txt && echo 'hi'
     startCommand: python app.py
     envVars:
       - fromGroup: hello-monorepo-envgroup-team
