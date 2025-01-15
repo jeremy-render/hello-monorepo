@@ -16,8 +16,7 @@ services:
       - key: PYTHON_VERSION
         value: 3.10.8
       - key: FOO
-        value: BAR
-        previewValue: BARR
+        value: BARRR
 
 
   - type: web
