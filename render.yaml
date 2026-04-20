@@ -27,7 +27,6 @@ services:
     preDeployCommand: echo 'hello'
     staticPublishPath: .
     envVars:
-      - fromGroup: hello-monorepo-envgroup-team
       - key: BACKEND_HOST
         fromService: 
           name: hello-monorepo-backend
