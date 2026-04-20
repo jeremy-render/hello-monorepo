@@ -25,6 +25,7 @@ services:
     env: static
     repo: https://github.com/jeremy-render/hello-monorepo.git
     rootDir: frontend
+    preDeployCommand: echo 'hello'
     staticPublishPath: .
     envVars:
       - fromGroup: hello-monorepo-envgroup-team
